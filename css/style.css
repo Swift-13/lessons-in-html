@@ -14,7 +14,7 @@
 }
 .container header:after {
     content:"";display: block;
-    clear: both; width: 1280px;
+    clear: right; width: 1280px;
 }
 .container header .header-wrapper {
   float: left;
@@ -22,18 +22,19 @@
 .container header .header-wrapper h1 {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Arial MT";
   font-size: 60px;
   font-weight: 400;
-    margin: 0 0 25px 0;
 }
 .container header .header-wrapper ul {
   list-style: none;
+  padding-inline-start: 0px;
+  margin-bottom: 50px;
 }
-.container header .header-wrapper li {position: relative;padding: 0 0 0 36px;
+.container header .header-wrapper li {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Arial MT";
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -41,9 +42,8 @@
 .container header .header-wrapper li:before {
     content: "";
     display: inline-block;
-    background-image: url(../img/check_icon.png); width: 25px;
+    background-image: url(img/check_icon.png); width: 25px;
 height: 19px;  padding-left: 10px; background-repeat: no-repeat; 
-    position: absolute; top:7px;left:0;
 }
 .container header .logo {
   width: 469px;
@@ -63,14 +63,14 @@ height: 19px;  padding-left: 10px; background-repeat: no-repeat;
     float:left;
 }
 .main-info h3 {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 30px;
 font-weight: 400;
 line-height: 36px;
     padding-bottom: 30px;
 }
 .main-info p {width: 650px; color: #333333;
-font-family: "Arial";
+font-family: Arial;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
@@ -84,26 +84,21 @@ line-height: 24px;
     display: block;
     clear: both;}
 .dignity h3 {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 30px;
 font-weight: 400;
 line-height: 36px;
     text-align: center;
     margin-bottom: 30px;
 }
-.dignity ul {list-style: none;}
+.dignity ul {list-style: none; list-style-image: url(img/Slice_3.png);}
 .dignity li {width: 530px;color: #333333;
-font-family: "Arial";
+font-family: Arial;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
     float: left;
-    padding: 0 0 0 60px;
-    position: relative;margin: 0 0 35px 0;
-}
-.dignity li:before {position: absolute; top:7px;left:21px;content: "+";display: block; width: 32px;
-height: 32px;
-background-color: #445161; line-height: 32px;font-weight: bold;color: #ffffff;text-align: center;font-size: 38px;
+    margin-left: 60px;
 }
 .screenshots {padding: 50px;
 }
@@ -113,7 +108,7 @@ background-color: #445161; line-height: 32px;font-weight: bold;color: #ffffff;te
     clear: both;
 }
 .screenshots h3 {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 30px;
 font-weight: 400;
 line-height: 36px;
@@ -126,13 +121,13 @@ height: 150px;
 background-color: #445161; float: left; margin-right: 15px;
 }
 .screenshots h6 {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 24px;
 font-weight: 400;
 line-height: 30px;
     margin: 0 0 15px 0;
 }
-.screenshots p {width: 575px;font-family: "Arial";
+.screenshots p {width: 575px;font-family: Arial;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
@@ -145,34 +140,31 @@ line-height: 24px;
     
 }
 .reviews h3 {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 30px;
 font-weight: 400;
 line-height: 36px;
     text-align: center;margin: 0 0 35px 0;
 }
-.reviews div {float: left;
+.reviews figure {float: left;
 }
 .reviews img {width: 75px;
 height: 75px;
 background-color: #445161;display: inline-block;
     border-radius: 50%; float: left;margin: 0 0 35px 0;
 }
-.reviews figcaption {background-color:#ebebeb; margin: 0 32px 25px 90px; padding: 16px;position: relative;
-}
-.reviews figcaption:before {content: "";position: absolute; left: -30px;
-       border: 20px solid transparent; border-right: 20px solid #ebebeb;
+.reviews figcaption {background-image: url(img/bg_review.png); margin: 0 32px 0 90px; padding: 0 0 0 27px;
 }
 .reviews p {width: 435px;  color: #333333;
-font-family: "Arial";
+font-family: Arial;
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
-    font-style: italic;margin:0 0 16px 0;
+    font-style: italic;
 }
 .reviews span {
     color: #989898;
-font-family: "Arial";
+font-family: Arial;
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
@@ -185,7 +177,7 @@ line-height: 18px;
     
 }
 .seller h3 {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 30px;
 font-weight: 400;
 line-height: 36px;
@@ -201,43 +193,41 @@ body > div > main > div.seller > section:nth-child(3) {
     margin: 96px 45px 0 0; 
 }
 .seller h6 {display: block;width: 300px; padding: 10px 0 10px 0; background-color: #445161; text-align: center; color: #ffffff;
-font-family: "Arial";
+font-family: "Arial MT";
 font-size: 24px;
 font-weight: 400;
 line-height: 30px;
     border-top-left-radius: 7px; border-top-right-radius: 7px;
 }
 body > div.container > main > div.seller > section:nth-child(4) {margin: 0;}
-.seller span {color: #445162;display: block;
-font-family: "Arial";
+.seller p {color: #445162;
+font-family: "Arial MT";
 font-size: 40px;
 font-weight: 400;
 line-height: 30px;
-    text-align: center; outline: 3px solid #445162;width: 295px; padding: 20px 0 20px 0; margin: 0 0 0 2px;
+    text-align: center; outline: 1px solid #445162;width: 298px; padding: 20px 0 20px 0; margin: 1px;
 }
-.seller ol {background-color: #445162; padding: 20px 0 20px 20px;width: 280px;
+.seller ol {background-color: #445162; padding: 20px 0 20px 20px;
 }
 .seller li {color: #ffffff;
-font-family: "Arial";
+font-family: Arial;
 font-size: 14px;
 font-weight: 400;
 line-height: 24px;list-style-position: inside;
 }
-
+.seller-wrapper {background-color: #445161; padding: 0 0 20px 20px;border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
+}
 .seller a {color: #445161;
-font-family: "Arial";
+font-family: Arial;
 font-size: 18px;
 font-weight: bold;
 line-height: 18px;
-text-transform: uppercase;display: inline-block; width: 260px;
-padding: 10px 0 10px 0;
-background-color: #ffffff;text-align: center; border: 20px solid #445161; border-radius: 0 0 7px 7px; 
+text-transform: uppercase;display: block; width: 260px;
+padding: 10px 0 10px 0; border-radius: 7px;
+background-color: #ffffff;text-align: center;
+    font: 
 }
-.seller a:hover{
-    background-color: #ebebeb;
-}
-.seller a:active{
-    background-color: #ffffff; color: #ebebeb;
+footer {
 }
 footer .footer-1 {background-color: #445161; padding: 50px 250px 50px 230px;
 }
@@ -247,7 +237,7 @@ footer .footer-1:after {content: "";
     
 }
 footer h3 {color: #ffffff;
-font-family: "Arial";
+font-family: Arial;
 font-size: 30px;
 font-weight: 400;
 line-height: 36px;
@@ -259,17 +249,17 @@ footer input {width: 500px;
 height: 40px;
 background-color: #ffffff;
     border-radius: 7px; padding: 0 0 0 10px; color: #445162;
-font-family: "Arial";
+font-family: Arial;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
     margin: 0 0 20px 0;
-    display: block;outline: none;
+    display: block;
 }
 body > div.container > footer > div > form > input:nth-child(3) {
     padding: 0 0 130px 10px; 
 }
-.footer-1 form input[type=submit]:nth-child(4){
+body > div > footer > div > form > input[type=submit]:nth-child(4){
     width: 140px;
 height: 40px;
 background-color: #ffffff;
@@ -277,32 +267,27 @@ background-color: #ffffff;
     padding: 0;
     margin: 0 0 0 180px;
 }
-.footer-1 form input[type=submit]:nth-child(4):hover {
-    background-color: #ebebeb; 
+footer ul {list-style: none; float: left;
 }
-.footer-1 form input[type=submit]:nth-child(4):active{
-    background-color: #ffffff; 
+footer ul li {margin: 8px 0 22px 0;
 }
-footer .list a{float: left;margin: 8px 0 22px 0; width: 200px;position: relative; padding: 0 0 0 30px;
+body > div.container > footer > div > ul:nth-child(3) > li:nth-child(1):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(img/skype_icon.png); background-repeat: no-repeat; margin: 0 5px 0 0;
 }
-
- footer > div > div > a:nth-child(1):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(../img/skype_icon.png); background-repeat: no-repeat; position: absolute; left: 0;
+body > div.container > footer > div > ul:nth-child(3) > li:nth-child(2):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(img/icq_icon.png); background-repeat: no-repeat; margin: 0 5px 0 0;
 }
- footer > div > div > a:nth-child(2):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(../img/icq_icon.png); background-repeat: no-repeat;  position: absolute;left: 0;
+body > div.container > footer > div > ul:nth-child(3) > li:nth-child(3):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(img/email_icon.png); background-repeat: no-repeat; margin: 0 5px 0 0;
 }
- footer > div > div > a:nth-child(3):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(../img/email_icon.png); background-repeat: no-repeat; position: absolute;left: 0;
+body > div.container > footer > div > ul:nth-child(3) > li:nth-child(4):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(img/phone_icon.png); background-repeat: no-repeat; margin: 0 5px 0 0;
 }
- footer > div > div > a:nth-child(4):before {content: ""; display: inline-block; width: 26px;height: 26px; background-image: url(../img/phone_icon.png); background-repeat: no-repeat; position: absolute;left: 0;
-}
-footer a {color: #ffffff;
-font-family: "Arial";
+footer ul a {color: #ffffff;
+font-family: Arial;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 }
 footer img {
 }
-footer .social-list {background-image: url(../img/social_buttons.png);width: 240px;
+footer .social-list {background-image: url(img/social_buttons.png);width: 240px;
 height: 42px;
 }
 footer .social-list {display: inline-block; padding: 0;
@@ -310,10 +295,10 @@ footer .social-list {display: inline-block; padding: 0;
 footer .social-list a {display: inline-block;width: 42px; height: 42px; margin: 0 5px 0 0; border-radius: 50%;
 }footer .social-list a:last-child {margin: 0 0 0 0;width: 38px; 
 }
-.copyright {text-align: center;
+footer p {text-align: center;
 }
-.copyright a {color: #445162;
-font-family: "Arial";
+footer p a {color: #445162;
+font-family: "Arial MT";
 font-size: 12px;
 font-weight: 400;
 line-height: 24px;
