@@ -1,0 +1,7 @@
+.container {position: relative; z-index: 9; width: 30%; margin: 0 auto;}
+div {
+    width: 100px; height: 100px; color:red;
+}
+video {
+    margin: 0 auto; position: fixed; top: 0; left: 0; z-index: 1;
+}
