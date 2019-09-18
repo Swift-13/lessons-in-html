@@ -156,26 +156,26 @@ line-height: 36px;
 .reviews img {width: 75px;
 height: 75px;
 background-color: #445161;display: inline-block;
-    border-radius: 50%; float: left;margin: 0 0 35px 0;
+    border-radius: 50%; float: left;margin: 0 0 0 0;
 }
-.reviews figcaption {background-color:#ebebeb; margin: 0 32px 25px 90px; padding: 16px;position: relative;
-}
-.reviews figcaption:before {content: "";position: absolute; left: -30px;
-       border: 20px solid transparent; border-right: 20px solid #ebebeb;
-}
-.reviews p {width: 435px;  color: #333333;
+
+.reviews p {width: 435px;  color: #333333; background-color: #ebebeb;
 font-family: "Arial";
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
-    font-style: italic;margin:0 0 16px 0;
+    font-style: italic;margin:0 24px 0 93px;position: relative; padding: 16px;   border-top-left-radius: 7px; border-top-right-radius: 7px;
 }
+.reviews p:before {content: "";position: absolute; left: -20px;
+    top: 25px;
+    border: 10px solid transparent; border-right: 10px solid #ebebeb;}
 .reviews span {
-    color: #989898;
+    color: #989898;background-color: #ebebeb; display: block;width: 435px;
 font-family: "Arial";
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
+    margin: 0 0 55px 93px;padding: 0 16px 16px 16px;  border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
 }
 .seller {padding: 50px 145px 50px 145px; 
 }
@@ -267,7 +267,7 @@ line-height: 36px;
 }
 footer form {float: left; margin: 0 45px 0 0;
 }
-footer input {width: 500px;
+footer input,footer form textarea {width: 500px;
 height: 40px;
 background-color: #ffffff;
     border-radius: 7px; padding: 0 0 0 10px; color: #445162;
@@ -276,10 +276,14 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
     margin: 0 0 20px 0;
-    display: block;outline: none;
+    display: block;outline: none;box-sizing: border-box;
 }
-body > div.container > footer > div > form > input:nth-child(3) {
-    padding: 0 0 130px 10px; 
+footer input:focus,footer form textarea:focus {
+    background-color: #ebebeb;
+}
+ footer form textarea {
+    padding: 10px; resize: none; width: 500px;
+height: 170px; 
 }
 .footer-1 form input[type=submit]:nth-child(4){
     width: 140px;
@@ -288,6 +292,7 @@ background-color: #ffffff;
     border-radius: 7px;
     padding: 0;
     margin: 0 0 0 180px;
+     text-transform: uppercase;
 }
 .footer-1 form input[type=submit]:nth-child(4):hover {
     background-color: #ebebeb; 
